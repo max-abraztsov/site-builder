@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.system-button  {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.system-button:hover {
+  border-color: #646cff;
+}
+.system-button:focus,
+.system-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  .system-button {
+    background-color: #f9f9f9;
+  }
+}
+.system-dashboard{
+  display: flex;
+}
+.sidebar{
+  width: 20%;
+  border: 1px solid #e7e7e7; 
+  height: 100vh;
+}
+.sidebar-head{
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar-footer{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 1px solid #e7e7e7;
+  
+}
+
+.update-elements{
+  margin-bottom: 10px;
+  background-color: #eefb89;
+}
+.generate-elements{
+  background-color: #89fb96;
+}
+
+.board{
+  width: 80%;
+  background-color:rgb(255, 255, 255);
+}
+.elements{
+  display: flex;
+  flex-direction : column;
+  margin: 20px 0;
+}
+.element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  border: 1px dashed #919191;
+  border-radius: 10px;
+  margin: 0 10px 10px 10px;
+  transition: 0.2s;
+}
+.element:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.element-name{
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+.add-element-button{
+  width: 90%;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #919191;
+  margin: 20px 30px;
+  border-radius: 10px;
+  transition: 0.2s;
+  background-color: #f7f7f7;
+}
+.add-element-button:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.add-element-button-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.element-icon{
+  width: 20px;
+  height: 20px;
+}
+
+
